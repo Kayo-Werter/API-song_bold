@@ -6,7 +6,7 @@ from video.serializers import VideoSerializer, VideoDetailSerializer
 
 
 class VideoViewSet(viewsets.ModelViewSet):
-    # permission_classes = [IsAuthenticated,]
+    permission_classes = [IsAuthenticated,]
     queryset = Video.objects.all()
 
     def get_serializer_class(self):
@@ -17,7 +17,7 @@ class VideoViewSet(viewsets.ModelViewSet):
 
 
 class VideoStatsViewSet(viewsets.ViewSet):
-    # permission_classes = [IsAuthenticated,]
+    permission_classes = [IsAuthenticated,]
     queryset = Video.objects.all()
 
     def list(self, request):

@@ -5,6 +5,6 @@ from category.serializers import CategorySerializer
 
 
 class CategoryViewSet(viewsets.ModelViewSet):
-    # permission_classes = [IsAuthenticated,]
+    permission_classes = [IsAuthenticated,]
     queryset = Category.objects.all()
     serializer_class = CategorySerializer

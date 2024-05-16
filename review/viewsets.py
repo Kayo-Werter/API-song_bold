@@ -5,6 +5,6 @@ from review.serializers import ReviewSerializer
 
 
 class ReviewViewSet(viewsets.ModelViewSet):
-    # permission_classes = [IsAuthenticated,]
+    permission_classes = [IsAuthenticated,]
     queryset = Review.objects.all()
     serializer_class = ReviewSerializer
