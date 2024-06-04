@@ -1,14 +1,16 @@
-import '../styles/inicio.css'
+import './video.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Navbar from '../components/navbar/navbar';
+import Navbar from '../navbar/navbar';
+import MenuLateral from '../MenuLateral/menulateral';
+import tumb from '../../assets/transferir.jpeg';
 
-import tumb from '../assets/transferir.jpeg';
 
 function Video() {
     return (
         <div>
             <div>
                 <Navbar />
+                {/* <MenuLateral/> */}
             </div>
             <div className='col-md-8 '>
                 <div className='container-xxl'>
@@ -18,7 +20,7 @@ function Video() {
                     <h3>Como fazer sua Tumbr profissional</h3>
                 </div>
                 <div>
-                    <button className='btn__perfil' width={30} height={30}></button>
+                    <button className='btn__perfil'></button>
                     <h8>TumbrsBRgb </h8>
                     <h8>há 3dias</h8>
                 </div>
@@ -43,8 +45,6 @@ function Video() {
                         </div>
                     </div>
                     
-                    
-
                 </div>
             </div>
         </div>

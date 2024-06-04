@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Login from './pages/Login'
 import Inicio from './pages/Inicio';
-import Video from './pages/Video.jsx';
+import Video from './components/Video/Video';
 
 function AppRouter() {
     return (

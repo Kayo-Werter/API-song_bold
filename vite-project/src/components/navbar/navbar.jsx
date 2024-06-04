@@ -1,8 +1,5 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../../styles/navbar.css';
+import './navbar.css';
 import logo from '../../assets/logo.png';
 import pesquisar from '../../assets/pesquisar.png';
 
@@ -23,6 +20,7 @@ const Navbar = () => {
                 </div>
             </div>
         </nav>
+        
     );
 };
 

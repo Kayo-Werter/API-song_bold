@@ -5,13 +5,14 @@ import React from 'react'
 import '../styles/inicio.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from '../components/navbar/navbar';
+import MenuLateral from '../components/MenuLateral/menulateral';
 
 
 function Inicio() {
     return (
         <div>
             <Navbar/>
-
+            <MenuLateral/>
         </div>
     )
 }
