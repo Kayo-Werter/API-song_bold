@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #282828;
+}
+
+
+.video {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    width: 300px;
+}
+
+.info_video {
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    padding: 5px;
+
+}
+
+.info_video_perfil {
+    padding: 5px 5px 5px 0px;
+}
+
+.info_video_tumb {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.info_video_descricao {
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
