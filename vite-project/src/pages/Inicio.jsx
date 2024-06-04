@@ -10,7 +10,7 @@ import Navbar from '../components/navbar/navbar';
 function Inicio() {
     return (
         <div>
-            <Navbar />
+            <Navbar/>
 
         </div>
     )
