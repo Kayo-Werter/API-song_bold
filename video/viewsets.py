@@ -1,21 +1,23 @@
 from django.db.models import Count
 from rest_framework import viewsets, response, status
+from rest_framework.permissions import IsAuthenticated
 from video.models import Video
 from video.serializers import VideoSerializer, VideoDetailSerializer
 
 
 class VideoViewSet(viewsets.ModelViewSet):
+    permission_classes = [IsAuthenticated,]
     queryset = Video.objects.all()
 
     def get_serializer_class(self):
 
         if self.request.method == 'GET':
             return VideoDetailSerializer
-        
         return VideoSerializer
 
 
 class VideoStatsViewSet(viewsets.ViewSet):
+    permission_classes = [IsAuthenticated,]
     queryset = Video.objects.all()
 
     def list(self, request):

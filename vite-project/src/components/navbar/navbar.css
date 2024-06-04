@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #282828;
+}
+
+.pesquisar {
+    border: 3px solid #9D20FF;
+    border-right: none;
+    border-radius: 20px 0 0 20px;
+    height: 50px;
+    line-height: normal;
+    color: #dadada;
+    display: block;
+    width: 30vh;
+    box-sizing: border-box;
+    user-select: auto;
+    font-size: 16px;
+    padding: 0 6px;
+    padding-left: 12px;
+    background-color: #282828;
+}
+
+.pesquisar:focus {
+    border: 3px solid #9D20FF;
+}
+
+.input_pesquisar {
+    display: flex;
+    flex-direction: row;
+}
+
+.btn__pesquisar {
+    background-color: black;
+    border-radius: 0 20px 20px 0;
+    width: 65px;
+    border: 3px solid #9D20FF;
+    border-left: none;
+}
+
+.btn__perfil {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.menu_lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens no centro do eixo transversal (vertical) */
+    width: 80px;
+    background-color: #282828;
+    overflow: hidden;
+}
+
+.menu_lateral a {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Alinha os itens no centro do eixo transversal (vertical) */
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+    
+}
+
+.menu_lateral img {
+    margin-bottom: 5px; /* Adiciona espaço entre a imagem e o texto */
+}
+
+.lobbi{
+    display: flex;
+    /* background-color: #282828; */
+}
+
+
+.menu_lateral {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80px;
+    background-color: #282828;
+    overflow: hidden;
+    font-size: 12px;
+}
+
+.menu_lateral a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.menu_lateral img {
+    margin-bottom: 1px;
+}
+
+.menu_lateral span {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 1; /* Número máximo de linhas */
+    line-height: 1.5; /* Ajuste conforme necessário para o espaçamento entre linhas */
+}
+
+.video {
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+    width: 300px;
+}
+
+.info_video{
+    display: flex;
+    flex-direction: row;
+    align-items: top;
+    padding: 5px;
+
+}
+
+.info_video_perfil{
+    padding: 5px 5px 5px 0px;
+}
+
+.info_video_tumb{
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.info_video_descricao{
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info_video_descricao h6 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2; /* Número máximo de linhas */
+    line-height: 1.5; /* Ajuste conforme necessário para o espaçamento entre linhas */
+}
