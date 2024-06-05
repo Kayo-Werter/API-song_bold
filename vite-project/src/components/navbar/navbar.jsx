@@ -1,7 +1,6 @@
-import 'bootstrap/dist/css/bootstrap.min.css';
-import './navbar.css';
-import logo from '../../assets/logo.png';
-import pesquisar from '../../assets/pesquisar.png';
+import logo from './logo.png';
+import pesquisarIcon from './pesquisar.png';
+import './navbar.css'
 
 const Navbar = () => {
     return (
@@ -11,10 +10,11 @@ const Navbar = () => {
                     <img src={logo} alt="logo" className='logo' />
                 </a>
                 <div className='input_pesquisar'>
-                    <input type="search" name="pesquisar" className='Pesquisar' placeholder="Pesquisar" aria-label="pesquisar"
-                        aria-describedby="basic-addon1" />
-                    <button type='submit' className='btn__pesquisar'><img src={pesquisar} alt="icn busca" width={20} height={20} /></button>
-                </div>
+                    <input type="search" name="pesquisar" className='Pesquisar' placeholder="Pesquisar"/>
+                    <button type="submit" className="btn__pesquisar" >
+                        <img src={pesquisarIcon} alt="Ícone de busca" style={{ width:'20px', height:'20px' }}/>
+                    </button>
+                    </div>
                 <div>
                     <button className='btn__perfil'><img src="" alt="" /></button>
                 </div>
