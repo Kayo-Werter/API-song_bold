@@ -1,7 +1,6 @@
 import './video.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from '../navbar/navbar';
-import MenuLateral from '../MenuLateral/menulateral';
 import tumb from './transferir.jpeg';
 
 
@@ -10,7 +9,6 @@ function Video() {
         <div>
             <div>
                 <Navbar />
-                
             </div>
             <div className='col-md-8 '>
                 <div className='container-xxl'>

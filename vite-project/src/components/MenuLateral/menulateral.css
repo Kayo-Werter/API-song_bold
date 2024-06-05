@@ -71,12 +71,8 @@ html {
 
 .lobbi{
     display: flex;
-    /* background-color: #282828; */
 }
 
-.container {
-    /* Remova display: flex */
-}
 
 .menu_lateral {
     display: flex;
