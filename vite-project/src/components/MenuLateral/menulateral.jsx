@@ -1,15 +1,16 @@
 import './menulateral.css'
 import CIcon from '@coreui/icons-react';
 import * as icon from '@coreui/icons';
+import { Link } from 'react-router-dom'
 
 const MenuLateral = () => {
     return (
         <div className="lobbi">
             <div className="menu_lateral">
-                <a href="#">
+                <Link to={`/inicio`}>
                     <CIcon icon={icon.cilHome} style={{ width:'28px', color:'#9D20FF'}} />
                     <span>Inicio</span>
-                </a>
+                </Link>
                 <a href="#">
                     <CIcon icon={icon.cilChevronDoubleRight} style={{ width:'28px', color:'#9D20FF'}} />
                     <span>inscrições</span>
@@ -20,8 +21,12 @@ const MenuLateral = () => {
                 </a>
                 <a href="#">
                     <CIcon icon={icon.cilEqualizer} style={{ width:'28px' , color:'#9D20FF'}} />
-                    <span>youtube studio</span>
+                    <span>Studio</span>
                 </a>
+                <Link to={`/videos-cadastrados`}>
+                        <CIcon icon={icon.cilHome} style={{ width:'28px', color:'#9D20FF'}} />
+                        <span>Adicionar</span>
+                </Link>
             </div>
         </div>
     );

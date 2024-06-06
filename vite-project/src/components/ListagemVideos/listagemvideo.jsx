@@ -1,7 +1,12 @@
 import { useState, useEffect } from 'react';
-import api from '../../api';
 import ReactPlayer from 'react-player';
+import { Link } from 'react-router-dom'
+
+import api from '../../api';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './listagemvideos.css'
+
 
 function MyPlayer() {
     const [videos, setVideos] = useState([]);
@@ -56,7 +61,9 @@ function MyPlayer() {
                                     <ReactPlayer controls={true} url={video.url}  />
                                 </div>
                                 <div className='descricao_principal'>
+                                    <Link to={`/video/${video.id}/`} className="produto-link">
                                     <span>{video.title}</span>
+                                    </Link>
                                 </div>
                                 <div className='descricao_principal'>
                                     <button className="btn__perfil" style={{ width: '30px', height: '30px' }}>
