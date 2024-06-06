@@ -5,7 +5,6 @@ import Navbar from '../components/navbar/navbar';
 import MenuLateral from '../components/MenuLateral/menulateral';
 import MyPlayer from '../components/ListagemVideos/listagemvideo';
 import ListagemCategorias from '../components/ListagemCategorias/ListagemCategorias';
-// import ReactPlayer from 'react-player/youtube';
 
 function Inicio() {
 
