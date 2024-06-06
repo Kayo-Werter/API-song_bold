@@ -1,0 +1,32 @@
+
+.title_menores{
+    color: white;
+    text-decoration: none;
+}
+
+.video-container_menores {
+    overflow: hidden;
+    border-radius: 15px; 
+    height: 200px;
+    box-shadow: 0px 9px 16px 2px rgba(17, 17, 17, 0.75);
+}
+
+.btn_menores{
+    display: flex;
+    justify-content: start;
+    padding: 3px;
+}
+
+.cor{
+    background-color: #212529;
+    color: #ffffff;
+}
+
+.m_2{
+    margin-top: 8%;
+}
+
+.m_3{
+    margin-top: 25px;
+}
+

@@ -3,3 +3,28 @@
     background-color: #212529 ;
     color: white;
 }
+
+.max_tamanho{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 40px; 
+    width: 300px;
+    height: 200px;
+}
+
+.btn_inicio{
+    padding-right: 20px;
+}
+
+.btn_menores2{
+    display: flex;
+    justify-content: start;
+    padding: 3px;
+    padding-left: 40px;
+}
+
+.btn_menores3{
+    padding-left: 40px;
+}

@@ -23,8 +23,8 @@ function MyPlayer() {
     }, []);
 
     return (
-        <div className='organizar_videos'>
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div className='conteiner cor pt-3'>
+            <div className="row ">
                 {videos.map((video, index) => {
                     // Verificar se as propriedades existem e são do tipo correto
                     if (typeof video.id !== 'number' && typeof video.id !== 'string') {
@@ -55,22 +55,22 @@ function MyPlayer() {
                     }
 
                     return (
-                        <div key={video.id} className="col">
-                            <div className="col-sm-8">
-                                <div className='video_principal_settings'>
+                        <div key={video.id} className="col-6 col-md-3">
+                            <div className="">
+                                <div className='max_tamanho'>
                                     <ReactPlayer controls={true} url={video.url}  />
                                 </div>
-                                <div className='descricao_principal'>
-                                    <Link to={`/video/${video.id}/`} className="produto-link">
-                                    <span>{video.title}</span>
+                                <div className=''>
+                                    <Link to={`/video/${video.id}/`} className="title_menores btn_menores2">
+                                    <span className='btn_menores truncates'>{video.title}</span>
                                     </Link>
                                 </div>
-                                <div className='descricao_principal'>
+                                <div className='btn_menores2'>
                                     <button className="btn__perfil" style={{ width: '30px', height: '30px' }}>
                                         <img src="" alt="" />
                                     </button>
-                                    <span>{categoryName}</span><br></br>
-                                    <span>{video.release_date}</span>
+                                    <span className='mx-2'>{categoryName}</span><br></br>
+                                    <span className='mx-1'>{video.release_date}</span>
                                 </div>
                             </div>
                         </div>

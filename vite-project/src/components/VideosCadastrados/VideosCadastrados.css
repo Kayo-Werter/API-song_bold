@@ -42,3 +42,10 @@
     color: #212529;
     transition: 0.3s;
 }
+
+.truncate {
+    max-width: 350px; /* Defina a largura máxima da célula */
+    white-space: nowrap; /* Evita a quebra de linha */
+    overflow: hidden; /* Oculta o texto que não cabe */
+    text-overflow: ellipsis; /* Adiciona "..." ao final do texto que não cabe */
+}
