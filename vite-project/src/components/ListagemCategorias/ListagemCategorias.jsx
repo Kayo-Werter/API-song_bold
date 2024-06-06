@@ -29,7 +29,7 @@ function CategoryList() {
   }, [])
   return (
     <div>
-      <div className="p-5 mb-2 bg-box">
+      <div>
         <section className='superior__secao__container'>
             <div className='superior__secao__container-wrapper'>
                 {categories.map((category) => 

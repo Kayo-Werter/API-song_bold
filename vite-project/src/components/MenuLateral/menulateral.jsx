@@ -1,6 +1,5 @@
 import './menulateral.css'
 import vinyl from './vinyl.png';
-import './menulateral.css'
 
 const MenuLateral = () => {
     return (

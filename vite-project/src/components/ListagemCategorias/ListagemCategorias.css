@@ -1,30 +1,30 @@
 .superior__secao__container {
-    height: 63px;
-    color: var(--branco);
+    height: 60px;
+    color: #041832;
     font-size: 16px;
-    background-color: var(--branco);
-    padding: 0 20px;
+    background-color: #212529;
+    padding: 15px 20px;
     position: fixed;
-    top: 80px;
+    top: 65px;
     right: 0;
-    left: 0;
-    /* transition: transform 0.5s ease-in-out;
-    transform: translateX(0); */
+    left: 80px;
 }
 
 .superior__item {
-    color: var(--cinza-escuro);
+    color: white;
     font-size: 16px;
-    background-color: var(--cinza-claro);
+    background-color: #181818;
     border-radius: 20px;
     padding: 8px 20px;
+    margin: 10px;
     cursor: pointer;
     width: 200px;
+    text-decoration: none;
 }
 
 .superior__item:hover {
-    color: var(--branco);
-    background-color: var(--azul-destaque-light);
+    color: black;
+    background-color: #9D20FF;
     transition: .5s;
 }
 
@@ -33,6 +33,5 @@
     right: 0%;
     width: 4%;
     height: 100%;
-    background-color: var(--branco);
     display: none;
 }

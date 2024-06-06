@@ -10,39 +10,46 @@ function Video() {
             <div>
                 <Navbar />
             </div>
-            <div className='col-md-8 '>
-                <div className='container-xxl'>
-                    <img src={tumb} alt="tumb do video" />
-                </div>
-                <div>
-                    <h3>Como fazer sua Tumbr profissional</h3>
-                </div>
-                <div>
-                    <button className='btn__perfil'></button>
-                    <span>TumbrsBRgb </span>
-                    <span>há 3dias</span>
-                </div>
-            </div>
-            <div className='col-6 col-md-4'>
-                <div className='container'>
-                    
-                    <div className='row justify-content-center'>
-                        <div className='col-6 col-md-4'>
-                            <div>
-                                <div className='video'>
-                                    <img className='info_video_tumb' src={tumb} alt="" />
-                                    <div className='info_video'>
-                                        <div className='info_video_descricao'>
-                                            <span>Como fazer sua Tumbr profissional</span>
-                                            <span>TumbrsBRgb </span>
-                                            <span>há 3 dias</span>
-                                        </div>
-                                    </div>
+            <div className="container text-center">
+                <div className="row">
+                    <div className="col-sm-8">
+                        <div className='video_principal_settings'>
+                            <img className='video_principal' src={tumb} alt="" />
+                        </div>
+                        
+                        <div className='descricao_principal'>
+                        <span >
+                            Como fazer sua Tumbr profissional</span>
+                        </div>
+                        <div className='descricao_principal'>
+                            <button className="btn__perfil" style={{ width: '30px', height: '30px' }}><img src="" alt="" /></button>
+                            <span>TumbrsBRgb </span>
+                            <span>há 3dias</span>
+                        </div>
+                    </div>
+                    <div className="col-sm-4">
+                        <div className="video">
+                            <img className="info_video_tumb" src={tumb} alt="tumb" />
+                            <div className="info_video">
+                                <div className="info_video_descricao">
+                                    <h6>Como fazer sua Tumbr profissional</h6>
+                                    <h8>TumbrsBRgb </h8>
+                                    <h8>há 3 dias</h8>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="video">
+                            <img className="info_video_tumb" src={tumb} alt="tumb" />
+                            <div className="info_video">
+                                <div className="info_video_descricao">
+                                    <span>Como fazer sua Tumbr profissional</span>
+                                    <span>TumbrsBRgb </span>
+                                    <span>há 3 dias</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
         </div>
