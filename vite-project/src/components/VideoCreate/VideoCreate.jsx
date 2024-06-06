@@ -52,7 +52,7 @@ function CreateVideo() {
             formData.append('category', category);
             formData.append('release_date', release_date);
             formData.append('description', description);
-    
+
             // Log dos dados do formulário
             console.log('Dados do Formulário:', {
                 title,
@@ -61,7 +61,7 @@ function CreateVideo() {
                 release_date,
                 description
             });
-    
+
             if (videoId) {
                 await api.put(`/v1/video/${videoId}/`, formData, {
                     headers: { 'Content-Type': 'multipart/form-data' }
@@ -97,22 +97,30 @@ function CreateVideo() {
 
                 <form onSubmit={handleSubmit}>
                     {/* Inputs para o nome, quantidade, tamanho, descricao e preço do produto */}
-                    <input type="text" placeholder="Título" value={title} onChange={(e) => setTitle(e.target.value)} />
-                    <input type="url" placeholder="URL" value={url} onChange={(e) => setUrl(e.target.value)} />
-                    <select className='select' value={category} onChange={(e) => setcategory(e.target.value)}>
-                        <option value={category.name}>Selecione uma Categoria</option>
-                        {categories.map((category) =>
-                            <option key={category.id} value={category.id}>{category.name}</option>
-                        )}
-                    </select>
-                    <input type="date" step="0.01" placeholder="data" value={release_date} onChange={(e) => setReleaseDate(e.target.value)} />
-                    <textarea placeholder="Descrição" value={description} onChange={(e) => setDescription(e.target.value)} />
+                    <div className='row'>
+                    
+                        <input className="form-control col forms_inputs" type="text" placeholder="Título" value={title} onChange={(e) => setTitle(e.target.value)} />
+                        <input className="form-control col forms_inputs" type="url" placeholder="URL" value={url} onChange={(e) => setUrl(e.target.value)} />
+                        <div className='row'>
+                            <select className='form-select col forms_inputs' value={category} onChange={(e) => setcategory(e.target.value)}>
+                                <option value={category.name}>Selecione uma Categoria</option>
+                                {categories.map((category) =>
+                                    <option key={category.id} value={category.id}>{category.name}</option>
+                                )}
+                            </select>
+                            <input className="form-control col forms_inputs" type="date" step="0.01" placeholder="data" value={release_date} onChange={(e) => setReleaseDate(e.target.value)} />
+                        </div>
+                        <textarea className="form-control" placeholder="Descrição" value={description} onChange={(e) => setDescription(e.target.value)} />
+                    </div>
 
-                    <button className="save-button" type="submit">{videoId ? 'Salvar' : 'Adicionar'}</button>
+                    <div className='btn_create'>
+                        <button className="add_video" type="submit">{videoId ? 'Salvar' : 'Adicionar'}</button>
 
-                    <Link to="/videos-cadastrados" >
-                        <button type="button" className="back-button">Voltar para Listagem</button>
-                    </Link>
+                        <Link to="/videos-cadastrados" >
+                            <button type="button" className="add_video">Voltar para Listagem</button>
+                        </Link>
+
+                    </div>
                 </form>
             </div>
         </div>

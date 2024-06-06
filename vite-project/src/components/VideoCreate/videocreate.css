@@ -1,0 +1,15 @@
+.forms_inputs{
+    margin: 20px;
+}
+
+.edit-produto-container{
+    background-color: #212529;
+    color: white;
+    padding: 15px;
+}
+
+.btn_create{
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+}

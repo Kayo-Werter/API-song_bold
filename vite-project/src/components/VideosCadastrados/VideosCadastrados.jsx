@@ -44,34 +44,36 @@ function VideosCadastrados() {
     <div>
       <Navbar />
       <MenuLateral />
-      <div className="header"></div>
-      <div className='header2'>
-        <h1 className='listaProdutos'>Controle de Estoque</h1>
-        <Link to="/video/create" className="create-button">Adicionar Video</Link>
-      </div>
-      <div className="p-3 mb-2 bg-box">
-        <table className="table table-hover text-center">
-          <thead>
-            <tr>
-              <th scope="col">Nome</th>
-              <th scope="col">Data</th>
-              <th scope="col">Opções</th>
-            </tr>
-          </thead>
-          <tbody className="-3">
-            {videos.map((video) => (
-              <tr key={video.id}>
-                <td>{video.title}</td>
-                <td>{video.release_date}</td>
-                <td>
-                  <Link to={`/video/${video.id}`} className="video-link">Detalhes</Link>
-                  <Link to={`/video/${video.id}/edit`} className="video-link">Editar</Link>
-                  <button onClick={() => handleDelete(video.id)} className="delete-button">Deletar</button>
-                </td>
+      <div className="header">
+
+        <div className='listaProdutos'>
+          <h1>Controle de Estoque</h1>
+          <Link to="/video/create" className="add_video">+ Adicionar Video</Link>
+        </div>
+        <div className="p-3 mb-2 bg-box">
+          <table className="table table-hover text-center table-secondary">
+            <thead>
+              <tr>
+                <th className='table-dark' scope="col">Nome</th>
+                <th className='table-dark' scope="col">Data</th>
+                <th className='table-dark' scope="col">Opções</th>
               </tr>
-            ))}
-          </tbody>
-        </table>
+            </thead>
+            <tbody>
+              {videos.map((video) => (
+                <tr className='table-dark' key={video.id}>
+                  <td>{video.title}</td>
+                  <td>{video.release_date}</td>
+                  <td >
+                    <Link to={`/video/${video.id}`} className="video-link">Detalhes</Link>
+                    <Link to={`/video/${video.id}/edit`} className="video-link">Editar</Link>
+                    <button onClick={() => handleDelete(video.id)} className="btn btn-danger">Deletar</button>
+                  </td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
     </div>
   )
