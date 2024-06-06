@@ -6,6 +6,7 @@ import api from '../../api'
 
 import Navbar from '../navbar/navbar';
 import VideosMenores from '../VideosMenores/VideosMenores';
+import MenuLateral from '../MenuLateral/menulateral';
 
 import './video.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -41,12 +42,14 @@ function Video() {
         <div>
             <div>
                 <Navbar />
+                <MenuLateral />
             </div>
-            <div className="container text-center">
+            
+            <div className="conteiner text-center cor">
                 <div className="row">
                     <div className="col">
                         <div className="col-sm-8">
-                            <div className='video_principal_settings'>
+                            <div className='v_2 video-container_maiores'>
                                 <ReactPlayer controls={true} url={url} />
                             </div>
                             <div className='descricao_principal'>
@@ -55,7 +58,7 @@ function Video() {
                                 </h3>
                             </div>
                             <div className='descricao_principal'>
-                                <h4>{category.name}</h4><br></br>
+                                <h4 className='m'>{category.name}</h4><br></br>
                                 <h5>{release_date}</h5>
                                 <span>{description}</span>
                             </div>

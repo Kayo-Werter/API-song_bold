@@ -23,8 +23,9 @@ function VideosMenores() {
     }, []);
 
     return (
-        <div className='organizar_videos'>
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-4">
+        <div className='container cor m_2'>
+            <div className="row ">
+                
                 {videos.map((video, index) => {
                     // Verificar se as propriedades existem e são do tipo correto
                     if (typeof video.id !== 'number' && typeof video.id !== 'string') {
@@ -55,22 +56,28 @@ function VideosMenores() {
                     }
 
                     return (
-                        <div key={video.id} className="col">
-                            <div className="col-sm-8">
-                                <div className='video_principal_settings'>
-                                    <ReactPlayer controls={true} url={video.url}  />
-                                </div>
-                                <div className='descricao_principal'>
-                                    <Link to={`/video/${video.id}/`} className="produto-link">
-                                    <span>{video.title}</span>
-                                    </Link>
-                                </div>
-                                <div className='descricao_principal'>
-                                    <button className="btn__perfil" style={{ width: '30px', height: '30px' }}>
-                                        <img src="" alt="" />
-                                    </button>
-                                    <span>{categoryName}</span><br></br>
-                                    <span>{video.release_date}</span>
+
+                        <div key={video.id}>
+                            <div>
+
+                            </div>
+                            <div>
+                                <div className='m_3'>
+                                    <div className='video-container_menores '>
+                                        <ReactPlayer controls={true} url={video.url} />
+                                    </div>
+                                    <div className=''>
+                                        <Link to={`/video/${video.id}/`} className="title_menores">
+                                            <span className='btn_menores'>{video.title}</span>
+                                        </Link>
+                                    </div>
+                                    <div className='btn_menores'>
+                                        <button className="btn__perfil " style={{ width: '30px', height: '30px' }}>
+                                            <img src="" alt="" />
+                                        </button>
+                                        <span className='mx-2'>{categoryName}</span><br></br>
+                                        <span className='mx-1'>{video.release_date}</span>
+                                    </div>
                                 </div>
                             </div>
                         </div>

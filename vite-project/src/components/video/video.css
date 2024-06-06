@@ -49,3 +49,25 @@ html {
     text-align: start;
     padding-left: 15px;
 }
+
+.v_2{
+    margin-top: 10%;
+}
+
+.video-container_maiores {
+    overflow: hidden;
+    border-radius: 10px;
+    width: 640px;
+    box-shadow: 0px 9px 16px 2px rgba(17, 17, 17, 0.75);
+}
+
+.conteiner{
+    padding: 0% 10%;
+}
+
+.truncates {
+    max-width: 640px; /* Defina a largura máxima da célula */
+    white-space: nowrap; /* Evita a quebra de linha */
+    overflow: hidden; /* Oculta o texto que não cabe */
+    text-overflow: ellipsis; /* Adiciona "..." ao final do texto que não cabe */
+}

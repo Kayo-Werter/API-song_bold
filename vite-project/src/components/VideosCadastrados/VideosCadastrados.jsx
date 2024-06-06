@@ -62,7 +62,7 @@ function VideosCadastrados() {
             <tbody>
               {videos.map((video) => (
                 <tr className='table-dark' key={video.id}>
-                  <td>{video.title}</td>
+                  <td className='truncate'>{video.title}</td>
                   <td>{video.release_date}</td>
                   <td >
                     <Link to={`/video/${video.id}`} className="video-link">Detalhes</Link>
