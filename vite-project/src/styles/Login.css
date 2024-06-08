@@ -36,6 +36,7 @@ html{
     border-radius: 10px;
     width: 350px;
     height: 55px;
+    padding-left: 10px;
 }
 
 .input__senha {

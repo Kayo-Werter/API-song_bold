@@ -34,7 +34,7 @@ function Login() {
             <h1>Login</h1>
             <form onSubmit={handleSubmit}>
               <label className='input__email font__login'>Username:</label>
-              <input className='input__email' type="text" placeholder="Digite seu E-mail" value={username} onChange={(e) => setUsername(e.target.value)} />
+              <input className='input__email' type="text" placeholder="Digite seu Username" value={username} onChange={(e) => setUsername(e.target.value)} />
               <label className='input__senha font__login'>Senha:</label>
               <input className='input__senha' type="password" placeholder="Digite sua Senha" value={password} onChange={(e) => setPassword(e.target.value)} />
               <a className='esqueceu__senha' href="">Esqueceu a senha?</a>

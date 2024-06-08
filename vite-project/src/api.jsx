@@ -9,6 +9,7 @@ const api = axios.create({
   timeout: 5000,
 })
 
+
 // Interceptador de solicitação: é executado antes de cada solicitação ser enviada.
 api.interceptors.request.use(
   async (config) => {

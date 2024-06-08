@@ -1,0 +1,51 @@
+.header {
+    padding: 15px 0px 0px 85px;
+    background-color: #212529;
+    color: white;
+}
+
+.video-link{
+    padding: 10px;
+    background-color: rgb(104, 104, 104);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 0px 5px;
+}
+
+.video-link:hover{
+    background-color: #9D20FF;
+    color: #212529;
+    transition: 0.3s;
+}
+
+.listaProdutos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 20px;
+    
+}
+
+.add_video{
+    padding: 10px;
+    background-color: rgb(104, 104, 104);
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    margin: 5px 5px;
+    
+}
+
+.add_video:hover{
+    background-color: #9D20FF;
+    color: #212529;
+    transition: 0.3s;
+}
+
+.truncate {
+    max-width: 350px; /* Defina a largura máxima da célula */
+    white-space: nowrap; /* Evita a quebra de linha */
+    overflow: hidden; /* Oculta o texto que não cabe */
+    text-overflow: ellipsis; /* Adiciona "..." ao final do texto que não cabe */
+}
